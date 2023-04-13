@@ -4,7 +4,7 @@ console.log("puerto",process.env.PORT)
 
 const express = require('express')
 const app = express()
-const port = 8080
+const port = process.env.PORT
 
 app.get('/healtz', (req, res) => {
     res.send("ok")
