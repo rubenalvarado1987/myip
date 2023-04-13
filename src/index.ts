@@ -1,5 +1,5 @@
 
-console.log(process.env.PORT)
+console.log("puerto",process.env.PORT)
 
 
 //const express = require('express')
