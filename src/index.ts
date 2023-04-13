@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
     console.log(`/`);
 });
 
+app.get('/ip',function(req, res) {
+    console.log("buscando IP...");
+    const ipAddress = req.header('x-forwarded-for') || req.socket.remoteAddress;
+    res.send("ipAddress encontrada:"+ipAddress);
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on ports ${port}`)
     //console.log(req.header('x-forwarded-for'))
