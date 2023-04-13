@@ -2,15 +2,15 @@
 console.log("puerto",process.env.PORT)
 
 
-//const express = require('express')
-//const app = express()
+const express = require('express')
+const app = express()
 
-// app.get('/healtz', (req, res) => {
-//     res.send("ok")
-//     console.log(`healtz ok`);
-// });
+app.get('/healtz', (req, res) => {
+    res.send("ok")
+    console.log(`healtz ok`);
+});
 
-// app.get('/', (req, res) => {
-//     res.send("ok")
-//     console.log(`/`);
-// });
+app.get('/', (req, res) => {
+    res.send("ok")
+    console.log(`/`);
+});
